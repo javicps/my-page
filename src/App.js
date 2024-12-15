@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Professional from './pages/Professional';
 import Writing from './pages/Writing';
 import Laleydeldesierto from './pages/Laleydeldesierto';
+import Inevitablesoledad from './pages/Inevitablesoledad';
+
 import Menu from './components/Menu';
 
 
@@ -16,6 +18,7 @@ const App = () => {
         <Route path="/professional" element={<Professional />} />
         <Route path="/writing" element={<Writing />} />
         <Route path="/writing/laleydeldesierto" element={<Laleydeldesierto />} />
+        <Route path="/writing/Inevitablesoledad" element={<Inevitablesoledad />} />
 
       </Routes>
     </div>
