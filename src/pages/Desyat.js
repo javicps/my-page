@@ -5,7 +5,7 @@ const Desyat = () => {
     return (
         <div className="written-text">
             <h1>Desyat</h1>
-            <p>Dos semanas despué de su llegada a la mansión Mikhalkov, la séptima institutriz salió por la puerta al grito de &laquo;¡No aguanto más!&raquo; mientras le devolvía en mano a la viuda Mikhalkovna los veinte kopeks prometidos por sus servicios.</p>
+            <p>Dos semanas después de su llegada a la mansión Mikhalkov, la séptima institutriz salió por la puerta al grito de &laquo;¡No aguanto más!&raquo; mientras le devolvía en mano a la viuda Mikhalkovna los veinte kopeks prometidos por sus servicios.</p>
             <p></p>
             <p>Años más tarde y con varios vasos de vodka en el cuerpo, la maestra finalmente cedería ante las preguntas de los curiosos, y acabaría confesando que se largó de la casa porque jamás aguantó el ruido que hacía la pequeña Konstantina al pensar.</p>
             <p></p>
@@ -25,9 +25,9 @@ const Desyat = () => {
             <p></p>
             <p>No le costó a la mujer, sin embargo, descubrir que su invitado era una persona especial y perteneciente a una clase social muy distinta a las de las visitas que solía recibir. Al tercer sorbo de su taza, ya sabía que el párroco que tenía delante carecía de cultura y maneras. Al quinto, confirmó que era prácticamente analfabeto.</p>
             <p></p>
-            <p>Pero vio en aquel hombrecillo algo que le hizo estremecer su corazón, ya cuarteado y agrietado despué de los vaivenes del tiempo. Fue en el momento en que se puso a narrarle las vidas de los santos, pues lo hacía con tal pasión y dedicación, que le hizo recordar sus tiempos en el colegio cuando coleccionaba estampillas con el resto de alumnas.</p>
+            <p>Pero vio en aquel hombrecillo algo que le hizo estremecer su corazón, ya cuarteado y agrietado después de los vaivenes del tiempo. Fue en el momento en que se puso a narrarle las vidas de los santos, pues lo hacía con tal pasión y dedicación, que le hizo recordar sus tiempos en el colegio cuando coleccionaba estampillas con el resto de alumnas.</p>
             <p></p>
-            <p>Una semana despué, cuando había conseguido asentarse en el pueblo, el joven comenzó a asistir por las tardes a la mansión para darle sus sermones a la pequeña.</p>
+            <p>Una semana después, cuando había conseguido asentarse en el pueblo, el joven comenzó a asistir por las tardes a la mansión para darle sus sermones a la pequeña.</p>
             <p></p>
             <p>La viuda desconfiaba sin embargo debido a los m&uacute;ltiples fracasos anteriores. &laquo;Por mucho que le des de comer al lobo —pensaba—, él mirará al bosque&raquo;. Las dudas que tenía se despejaron una tarde en la que decidió observar la lección a travé del pequeño agujero que conectaba el estudio con la biblioteca. Comprobó que Konstantina no solo escuchaba con atención sino que preguntaba interesada sobre las historias de martirios, reliquias y conversiones que le contaba todas las tardes aquel hombre. &laquo;De seguir así las cosas&raquo; &mdash;se decía la viuda&mdash;, &laquo;quizás en un par de años pueda intentar ingresarla en el convento de san Ambrosio de Shamordino&raquo;.</p>
             <p></p>
@@ -41,7 +41,7 @@ const Desyat = () => {
             <p></p>
             <p>La señora Mikhalkovna actuó rápidamente y llamó a la guardia. Cuando llegaron a detenerlo, el hombre se puso a llorar y berrear, no por el arresto en sí, sino por el hecho de que le fueran a alejar de la niña. Los gendarmes lo sacaron a puntapié y le hicieron dormir varias noches en calabozo, hasta que, ya con la mente serena, desistió y abandonó el pueblo.</p>
             <p></p>
-            <p>Despué de este episodio, Grigori caminó por toda Rusia durante años hablando de los pasajes que le contó la pequeña Konstantina, por lo que tuvieron que pasar varias décadas y la intervención del Patriarcado de Mosc&uacute; para que se pusiera orden y se tamizaran los santos verdaderos de aquellos que fueron inventados por la mente de una niña aquel invierno en la mansión Mikhalkov.</p>
+            <p>Después de este episodio, Grigori caminó por toda Rusia durante años hablando de los pasajes que le contó la pequeña Konstantina, por lo que tuvieron que pasar varias décadas y la intervención del Patriarcado de Mosc&uacute; para que se pusiera orden y se tamizaran los santos verdaderos de aquellos que fueron inventados por la mente de una niña aquel invierno en la mansión Mikhalkov.</p>
             <p></p>
             <p></p>
         </div>
