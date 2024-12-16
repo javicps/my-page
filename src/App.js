@@ -7,6 +7,7 @@ import Inevitablesoledad from './pages/Inevitablesoledad';
 import Desyat from './pages/Desyat';
 import Entrelosmuertos from './pages/Entrelosmuertos';
 
+import Footer from './components/Footer';
 import Menu from './components/Menu';
 
 
@@ -23,10 +24,9 @@ const App = () => {
         <Route path="/writing/Inevitablesoledad" element={<Inevitablesoledad />} />
         <Route path="/writing/Desyat" element={<Desyat />} />
         <Route path="/writing/Entrelosmuertos" element={<Entrelosmuertos />} />
-
-
       </Routes>
-    </div>
+      <Footer />
+      </div>
   );
 };
 
