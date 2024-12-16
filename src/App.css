@@ -13,16 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -34,20 +24,30 @@ body {
   margin: 10px;
 }
 
-nav ul {
-  list-style: none;
+.header {
+  position: sticky; /* Makes the header stick to the top */
+  top: 0; /* Ensures it sticks at the very top */
+  z-index: 1000; /* Keeps the header above other elements */
+  background-color: #fff; /* Set a background to avoid overlap issues */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for visibility */
+  padding: 10px 20px;
+}
+
+.navbar {
   display: flex;
-  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-nav ul li a {
+.navbar a {
   text-decoration: none;
-  color: #007bff;
+  color: #333;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #0056b3;
+.navbar a:hover {
+  color: #0077b5; /* Example: a hover color */
 }
 
 @keyframes App-logo-spin {
@@ -101,10 +101,8 @@ div.written-text {
   font-size: large;
   margin-left: 25%;
   margin-right: 25%;
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
-  flex: 1;
 }
 
 div.written-text h1 {
@@ -140,4 +138,30 @@ div.free-text {
 
 .social-icons a:hover {
   color: #0077b5; /* Example: LinkedIn blue */
+}
+
+.story-list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Makes it responsive */
+}
+
+.story-card {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.story-card a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

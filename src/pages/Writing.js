@@ -12,13 +12,15 @@ const Writing = () => {
   return (
     <div class="free-text">
       <h1>My Writing</h1>
-      <ul>
+      <p>This is a collection of short fiction stories I wrote (in Spanish)</p>
+      <p>Esta es una selección de relatos cortos que he escrito (en Español)</p>
+      <div className="story-list">
         {stories.map((story, index) => (
-          <li key={index}>
+          <div className="story-card" key={index}>
             <Link to={`/writing/${story.slug}`}>{story.title}</Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

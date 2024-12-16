@@ -16,15 +16,17 @@ const App = () => {
   return (
     <div>
       <Menu />
-      <Routes>
-        <Route path="/" element={<div class="free-text"><h1>Welcome to My Page</h1></div>} />
-        <Route path="/professional" element={<Professional />} />
-        <Route path="/writing" element={<Writing />} />
-        <Route path="/writing/laleydeldesierto" element={<Laleydeldesierto />} />
-        <Route path="/writing/Inevitablesoledad" element={<Inevitablesoledad />} />
-        <Route path="/writing/Desyat" element={<Desyat />} />
-        <Route path="/writing/Entrelosmuertos" element={<Entrelosmuertos />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<div class="free-text"><h1>Welcome to My Page</h1></div>} />
+          <Route path="/professional" element={<Professional />} />
+          <Route path="/writing" element={<Writing />} />
+          <Route path="/writing/laleydeldesierto" element={<Laleydeldesierto />} />
+          <Route path="/writing/Inevitablesoledad" element={<Inevitablesoledad />} />
+          <Route path="/writing/Desyat" element={<Desyat />} />
+          <Route path="/writing/Entrelosmuertos" element={<Entrelosmuertos />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
