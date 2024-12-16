@@ -10,11 +10,12 @@ const About = () => {
       <p>
         I've worked in international roles, contributing to projects in diverse technical environments. Some highlights include presenting at the Open Source Summit Europe 2023 and leading a team to migrate a retail company's e-commerce solution to a modern framework.
       </p>
+      
+      <p>Check the <a href="https://sysdig.com/blog/author/javier-martinez/">technical articles I wrote for Sysdig</a></p>
 
-      <p>Check my talk about Container Checkpointing in Open Source Summit Europe (with Daniel Simionato)</p>
-      <iframe width="420" height="315"
-        src="https://www.youtube.com/watch?v=cQkCOZWjXNs">
-      </iframe>
+      <p>Watch my talk about Container Checkpointing in Open Source Summit Europe (with Daniel Simionato)</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cQkCOZWjXNs?si=nWPi8rRTa2n18umh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     </div>
   );
 };
