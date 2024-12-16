@@ -64,7 +64,7 @@ const Inevitablesoledad = () => {
             
             <p>&mdash;Se lo imploro. Si no es como hombre de ciencia, entonces como buen cristiano. Ayúdeme. Ayúdela.</p>
             
-            <p>&mdash;Apela usted al cristiano en mí, pero sabe lo que haría cualquier cristiano con esta abominación.</p>
+            <p>&mdash;Apela usted al cristiano en mí, pero sabe lo que haría cualquier hombre de fe con esta abominación.</p>
             
             <p>&mdash;Luego entonces, &iexcl;reconoce que está viva! &mdash;dijo Mr Pembroke.</p>
             
