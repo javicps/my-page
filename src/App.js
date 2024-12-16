@@ -14,8 +14,7 @@ import Menu from './components/Menu';
 const App = () => {
   return (
     <div>
-
-      <Menu/>
+      <Menu />
       <Routes>
         <Route path="/" element={<div class="free-text"><h1>Welcome to My Page</h1></div>} />
         <Route path="/professional" element={<Professional />} />
@@ -26,7 +25,7 @@ const App = () => {
         <Route path="/writing/Entrelosmuertos" element={<Entrelosmuertos />} />
       </Routes>
       <Footer />
-      </div>
+    </div>
   );
 };
 

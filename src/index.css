@@ -60,3 +60,18 @@ div.free-text {
   left: 0;
   width: 100%;
 }
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* Example: LinkedIn blue */
+}
