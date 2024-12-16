@@ -6,6 +6,7 @@ import Laleydeldesierto from './pages/Laleydeldesierto';
 import Inevitablesoledad from './pages/Inevitablesoledad';
 import Desyat from './pages/Desyat';
 import Entrelosmuertos from './pages/Entrelosmuertos';
+import './App.css'
 
 import Footer from './components/Footer';
 import Menu from './components/Menu';

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Laleydeldesierto = () => {
     return (
-        <div class="written-text">
+        <div className="written-text">
             <h1>La ley del desierto</h1>
             <p><span>Esta historia sucedió hace mucho tiempo, durante un día de mercado en la ciudad de Bagdad. Era una mañana  de primavera con una temperatura bastante suave. Los clientes se agolpaban alrededor de los puestos de  sándalo, pimienta, cuero y seda. </span></p>
             <p ><span >En un callejón aledaño, Kassim el ratero observaba a los viandantes. Farah, una mujer de pelo canoso y piel  oscura caminaba despreocupada. El hombre vio su oportunidad. Con su cimitarra, amenazó a la mujer para  que le entregara todo lo que llevaba.  </span></p>

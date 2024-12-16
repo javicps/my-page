@@ -3,7 +3,7 @@ import React from 'react';
 
 const Desyat = () => {
     return (
-        <div class="written-text">
+        <div className="written-text">
             <h1>Desyat</h1>
             <p>Dos semanas despué de su llegada a la mansión Mikhalkov, la séptima institutriz salió por la puerta al grito de &laquo;¡No aguanto más!&raquo; mientras le devolvía en mano a la viuda Mikhalkovna los veinte kopeks prometidos por sus servicios.</p>
             <p></p>

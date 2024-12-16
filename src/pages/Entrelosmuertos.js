@@ -3,7 +3,7 @@ import React from 'react';
 
 const Entrelosmuertos = () => {
     return (
-        <div class="written-text">
+        <div className="written-text">
             <h1>Entre los muertos habrá siempre una lengua viva</h1>
             <p>&mdash;L&aacute;nzale este pedrolo, ja, ja &mdash;Jacinto re&iacute;a mientras le acercaba un cascote a su amigo.</p>
             <p></p>
