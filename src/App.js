@@ -4,6 +4,8 @@ import Professional from './pages/Professional';
 import Writing from './pages/Writing';
 import Laleydeldesierto from './pages/Laleydeldesierto';
 import Inevitablesoledad from './pages/Inevitablesoledad';
+import Desyat from './pages/Desyat';
+import Entrelosmuertos from './pages/Entrelosmuertos';
 
 import Menu from './components/Menu';
 
@@ -19,6 +21,9 @@ const App = () => {
         <Route path="/writing" element={<Writing />} />
         <Route path="/writing/laleydeldesierto" element={<Laleydeldesierto />} />
         <Route path="/writing/Inevitablesoledad" element={<Inevitablesoledad />} />
+        <Route path="/writing/Desyat" element={<Desyat />} />
+        <Route path="/writing/Entrelosmuertos" element={<Entrelosmuertos />} />
+
 
       </Routes>
     </div>
