@@ -16,7 +16,7 @@ const App = () => {
 
       <Menu/>
       <Routes>
-        <Route path="/" element={<h1>Welcome to My Page</h1>} />
+        <Route path="/" element={<div class="free-text"><h1>Welcome to My Page</h1></div>} />
         <Route path="/professional" element={<Professional />} />
         <Route path="/writing" element={<Writing />} />
         <Route path="/writing/laleydeldesierto" element={<Laleydeldesierto />} />

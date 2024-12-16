@@ -13,7 +13,7 @@ const About = () => {
       
       <p>Check the <a href="https://sysdig.com/blog/author/javier-martinez/" target="_blank">technical articles I wrote for Sysdig</a></p>
 
-      <p>The piece about <a href="https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/" target="_blank">Crashloopbackoff</a> reached #1 rank in Googl and was featured in several professional channels</p>
+      <p>The piece about <a href="https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/" target="_blank">Crashloopbackoff</a> reached #1 rank in Google and was featured in several professional channels</p>
 
       <p>Watch my talk about Container Checkpointing in Open Source Summit Europe (with Daniel Simionato):</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/cQkCOZWjXNs?si=nWPi8rRTa2n18umh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
