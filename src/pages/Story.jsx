@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { stories } from '../data/storiesData';
 import WrittenText from '../components/WrittenText';
 
-function getStory(id) {
+const getStory = (id) => {
   return stories.find((story) => story.id === id);
 
 }
