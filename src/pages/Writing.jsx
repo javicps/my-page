@@ -1,14 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Writing = () => {
+  useEffect(() => {
+    document.title = "Javier Martínez - Writing";
+  }, []);
+
   const stories = [
     { title: "La ley del desierto", slug: "laleydeldesierto" },
-    { title: "La inevitable soledad de Henrietta Penbroke", slug: "inevitablesoledad" },
-    { title: "Entre los muertos habrá siempre una lengua viva", slug: "entrelosmuertos" },
+    {
+      title: "La inevitable soledad de Henrietta Penbroke",
+      slug: "inevitablesoledad",
+    },
+    {
+      title: "Entre los muertos habrá siempre una lengua viva",
+      slug: "entrelosmuertos",
+    },
     { title: "Desyat", slug: "desyat" },
     { title: "Seguir las luces", slug: "seguirlasluces" },
-
   ];
 
   return (
