@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <Menu />
       <div className="content">
-        <Routes>
+        <Routes basename="/my-page">
           <Route path="/" element={<About />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/writing" element={<Writing />} />
