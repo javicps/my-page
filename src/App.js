@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Professional from './pages/Professional';
 import Writing from './pages/Writing';
-import StoryPage from './pages/StoryPage';
+import StoryPage from './pages/Story';
 import './App.css'
 
 import Footer from './components/Footer';
@@ -20,8 +20,6 @@ const App = () => {
           <Route path="/professional" element={<Professional />} />
           <Route path="/writing" element={<Writing />} />
           <Route path="/writing/:id" element={<StoryPage />} />
-
-
         </Routes>
       </div>
       <Footer />

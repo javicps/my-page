@@ -3,9 +3,14 @@ import { useParams } from 'react-router-dom';
 import { stories } from '../data/storiesData';
 import WrittenText from '../components/WrittenText';
 
+function getStory(id) {
+  return stories.find((story) => story.id === id);
+
+}
+
 const StoryPage = () => {
   const { id } = useParams(); // Get 'id' from the route
-  const story = stories.find((story) => story.id === id);
+  const story = getStory(id);
 
 
   if (!story) {
@@ -13,7 +18,7 @@ const StoryPage = () => {
   }
 
   return (
-    <WrittenText title={story.title} content={story.content}/>
+    <WrittenText {...story}/>
   );
 };
 
