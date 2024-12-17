@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div class="free-text">
+    <div className="free-text">
       <h1>About Me</h1>
       <p>
         I'm Javier Martinez. I have over fifteen years of experience as an engineer, including more than eight years leading IT teams. My expertise spans areas such as e-commerce, CI/CD, Kubernetes, observability, and building service-oriented architectures.

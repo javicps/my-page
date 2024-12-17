@@ -12,7 +12,7 @@ const Writing = () => {
   ];
 
   return (
-    <div class="free-text">
+    <div className="free-text">
       <h1>My Writing</h1>
       <p>This is a collection of short fiction stories I wrote (in Spanish)</p>
       <p>Esta es una selección de relatos cortos que he escrito (en Español)</p>
