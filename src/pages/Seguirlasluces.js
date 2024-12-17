@@ -24,7 +24,7 @@ export default function Seguirlasluces() {
             <p></p>
             <p>Mi madre, que no ha cogido un volante en su vida, asinti&oacute; convencida por el argumento.</p>
             <p></p>
-            <p>Yo me qued&eacute; pensativo: es cierto que para saber la senda por la que discurrir puede ayudarte el fijarte en la estela de luces colgantes, pero cualquiera que haya conducido un coche m&aacute;s de doscientos metros sabe que aquella afirmaci&oacute;n no era cierta.&nbsp;</p>
+            <p>Yo me qued&eacute; pensativo: es cierto que para saber la senda por la que discurrir puede ayudarte el fijarte en la estela de luces colgantes, pero cualquiera que haya conducido un coche m&aacute;s de doscientos metros sabe que la tarea no era tan sencilla.</p>
             <p></p>
             <p>Hay que saber levantar el embrague la distancia correcta, hay que se&ntilde;alizar correctamente las maniobras y (sobre todo si pertenec&iacute;as al gremio del conductor de aquella noche) se necesita tener mucha paciencia para aguantar al resto de usuarios de la v&iacute;a.</p>
             <p></p>
