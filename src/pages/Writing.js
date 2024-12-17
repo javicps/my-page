@@ -7,6 +7,8 @@ const Writing = () => {
     { title: "La inevitable soledad de Henrietta Penbroke", slug: "inevitablesoledad" },
     { title: "Entre los muertos habrá siempre una lengua viva", slug: "entrelosmuertos" },
     { title: "Desyat", slug: "desyat" },
+    { title: "Seguir las luces", slug: "seguirlasluces" },
+
   ];
 
   return (

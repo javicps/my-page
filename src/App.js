@@ -10,6 +10,7 @@ import './App.css'
 
 import Footer from './components/Footer';
 import Menu from './components/Menu';
+import Seguirlasluces from './pages/Seguirlasluces';
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
           <Route path="/writing/Inevitablesoledad" element={<Inevitablesoledad />} />
           <Route path="/writing/Desyat" element={<Desyat />} />
           <Route path="/writing/Entrelosmuertos" element={<Entrelosmuertos />} />
+          <Route path="/writing/Seguirlasluces" element={<Seguirlasluces />} />
+
         </Routes>
       </div>
       <Footer />
