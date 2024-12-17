@@ -11,8 +11,7 @@ const getStory = (id) => {
 const StoryPage = () => {
   const { id } = useParams(); // Get 'id' from the route
   const story = getStory(id);
-
-
+  
   if (!story) {
     return <h1>Story not found</h1>;
   }

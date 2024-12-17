@@ -10,7 +10,7 @@ export default function Component() {
       <p>© {new Date().getFullYear()} Javier Martínez. All rights reserved.</p>
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/javier-martinez-2b2a955/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin size={24} />
+         <FaLinkedin size={24} />
         </a>
         <a href="https://twitter.com/javiermartp" target="_blank" rel="noopener noreferrer">
           <FaTwitter size={24} />

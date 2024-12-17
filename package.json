@@ -3,24 +3,26 @@
   "name": "Javier Martínez",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.0.2",
-    "react-scripts": "^5.0.1",
+    "vite": "^6.0.3",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
