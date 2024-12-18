@@ -4,7 +4,7 @@ import Professional from "./pages/Professional";
 import Writing from "./pages/Writing";
 import About from "./pages/About";
 
-import StoryPage from "./pages/Story";
+import Story from "./pages/Story";
 import "./App.css";
 
 import Footer from "./components/Footer";
@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/" element={<About />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/writing" element={<Writing />} />
-          <Route path="/writing/:id" element={<StoryPage />} />
+          <Route path="/writing/:id" element={<Story />} />
         </Routes>
       </div>
       <Footer />

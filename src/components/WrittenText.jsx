@@ -1,12 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function WrittenText({title, content}) {
+export default function WrittenText({ title, content }) {
   return (
     <div className="written-text">
-        <h1>{title}</h1>
-        <div>
-            {content}
-        </div>
+      <h1>{title}</h1>
+      <div>{content}</div>
     </div>
-  )
+  );
 }

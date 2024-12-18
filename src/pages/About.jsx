@@ -6,7 +6,7 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+    <div className="free-text">
       <h1>About Me</h1>
       <p>Hi, I'm Javier Martinez. Welcome to my page.</p>
     </div>
