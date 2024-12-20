@@ -5,7 +5,7 @@ import Writing from "./pages/Writing";
 import About from "./pages/About";
 
 import Story from "./pages/Story";
-import "./App.css";
+import "./App.scss";
 
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
