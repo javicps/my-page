@@ -1,8 +1,16 @@
 @import "./colors";
 
-@mixin theme($bg-color, $text-color, $icon-color) {
+@mixin theme($bg-color, $text-color, $icon-color, $link-color) {
   background-color: $bg-color;
   color: $text-color;
+
+  a {
+    color: $link-color;
+  }
+
+  .navbar a {
+    color: $link-color;
+  }
 
   .social-icons .icon {
     color: $icon-color;

@@ -25,7 +25,7 @@ const App = () => {
   const dark = pageMode === PAGE_MODE.DARK ? "dark" : ""
 
   return (
-    <div className={dark ? "dark-mode" : "light-mode"}>
+    <div className={dark ? "main dark-mode" : "main light-mode"}>
       <Menu pageMode={dark} />
       <div className="content">
         <Routes basename="/my-page">

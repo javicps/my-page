@@ -35,10 +35,9 @@ export default function Footer({ pageMode, togglePageMode }) {
           <FaGithub size={24} />
         </a>
       </div>
-      <button
-        className={`toggle-btn ${dark}`}
-        onClick={togglePageMode}
-      ></button>
+      <button className={`dark-mode-toggle ${dark}`} onClick={togglePageMode}>
+        Dark Mode: {pageMode === PAGE_MODE.DARK ? "on" : "off"}
+      </button>
     </footer>
   )
 }

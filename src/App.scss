@@ -13,21 +13,46 @@ body {
   min-height: 100%;
   padding: 0;
   height: 100%;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 1.3s ease, color 1.3s ease;
 
   a {
     color: colors.$light-gray;
   }
 }
 
+.main {
+  flex: 1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
 // Light mode
 .light-mode {
-  @include theme($bg-color-light, $text-color-light, $icon-color-light);
+  @include theme(
+    $bg-color-light,
+    $text-color-light,
+    $icon-color-light,
+    $link-color-light
+  );
 }
 
 // Dark mode
 .dark-mode {
-  @include theme($bg-color-dark, $text-color-dark, $icon-color-dark);
+  @include theme(
+    $bg-color-dark,
+    $text-color-dark,
+    $icon-color-dark,
+    $link-color-dark
+  );
+}
+
+.dark-mode-toggle {
+  float: right;
+  margin-right: 10px;
 }
 
 .header {
@@ -39,7 +64,9 @@ body {
 }
 
 .content {
-  min-height: 1000px;
+  flex: 1; /* Allows content to expand */
+  padding-bottom: 100px; /* Add padding for better readability */
+  overflow-y: auto; /* Enables scrolling for overflow */
 }
 
 .navbar {
@@ -63,7 +90,7 @@ body {
   font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 }
 
 h1 {
@@ -107,7 +134,7 @@ div.written-text {
 
 div.free-text {
   font-size: large;
-  margin-left: 40px;
+  margin: 0 40px;
 }
 
 .footer {
@@ -126,7 +153,7 @@ div.free-text {
     margin: 0 10px;
     color: #333;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 1.3s ease;
   }
   a:hover {
     color: colors.$linkedin-blue; /* Example: LinkedIn blue */
