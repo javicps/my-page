@@ -1,19 +1,32 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Professional from "./pages/Professional";
-import Writing from "./pages/Writing";
-import About from "./pages/About";
+import React, { useState } from "react"
+import { Routes, Route } from "react-router-dom"
+import Professional from "./pages/Professional"
+import Writing from "./pages/Writing"
+import About from "./pages/About"
 
-import Story from "./pages/Story";
-import "./App.scss";
+import Story from "./pages/Story"
+import "./App.scss"
 
-import Footer from "./components/Footer";
-import Menu from "./components/Menu";
+import Footer from "./components/Footer"
+import Menu from "./components/Menu"
+import { PAGE_MODE } from "./constants/PageMode"
 
 const App = () => {
+  const [pageMode, setPageMode] = useState(() => {
+    return false
+  })
+
+  const togglePageMode = () => {
+    const newPageMode =
+      pageMode === PAGE_MODE.LIGHT ? PAGE_MODE.DARK : PAGE_MODE.LIGHT
+    setPageMode(newPageMode)
+  }
+
+  const dark = pageMode === PAGE_MODE.DARK ? "dark" : ""
+
   return (
-    <div>
-      <Menu />
+    <div className={dark ? "dark-mode" : "light-mode"}>
+      <Menu pageMode={dark} />
       <div className="content">
         <Routes basename="/my-page">
           <Route path="/" element={<About />} />
@@ -22,9 +35,9 @@ const App = () => {
           <Route path="/writing/:id" element={<Story />} />
         </Routes>
       </div>
-      <Footer />
+      <Footer pageMode={dark} togglePageMode={togglePageMode} />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

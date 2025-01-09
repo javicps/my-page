@@ -1,10 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import React from "react"
+import { PAGE_MODE } from "../constants/PageMode"
 
-export default function Component() {
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa"
+
+export default function Footer({ pageMode, togglePageMode }) {
+  const handleClick = () => {
+    togglePageMode()
+  }
+  const dark = pageMode === PAGE_MODE.DARK ? "dark-mode" : "light-mode"
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${dark}`}>
       <p>© {new Date().getFullYear()} Javier Martínez. All rights reserved.</p>
       <div className="social-icons">
         <a
@@ -29,6 +35,10 @@ export default function Component() {
           <FaGithub size={24} />
         </a>
       </div>
+      <button
+        className={`toggle-btn ${dark}`}
+        onClick={togglePageMode}
+      ></button>
     </footer>
-  );
+  )
 }

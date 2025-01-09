@@ -1,0 +1,11 @@
+@import "./colors";
+
+@mixin theme($bg-color, $text-color, $icon-color) {
+  background-color: $bg-color;
+  color: $text-color;
+
+  .social-icons .icon {
+    color: $icon-color;
+    transition: color 0.3s ease;
+  }
+}

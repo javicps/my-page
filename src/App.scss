@@ -1,17 +1,45 @@
-@import "colors";
+@use "colors";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import "./themes";
 
+html {
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  height: 100%;
+}
 body {
-  margin: 10px;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  height: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  a {
+    color: colors.$light-gray;
+  }
+}
+
+// Light mode
+.light-mode {
+  @include theme($bg-color-light, $text-color-light, $icon-color-light);
+}
+
+// Dark mode
+.dark-mode {
+  @include theme($bg-color-dark, $text-color-dark, $icon-color-dark);
 }
 
 .header {
   position: sticky; /* Makes the header stick to the top */
   top: 0; /* Ensures it sticks at the very top */
   z-index: 1000; /* Keeps the header above other elements */
-  background-color: white; /* Set a background to avoid overlap issues */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for visibility */
   padding: 10px 20px;
+}
+
+.content {
+  min-height: 1000px;
 }
 
 .navbar {
@@ -21,13 +49,13 @@ body {
 
   a {
     text-decoration: none;
-    color: #333;
+    color: colors.$dark-gray;
     font-weight: bold;
     transition: color 0.3s ease;
   }
 
   a:hover {
-    color: #0077b5; /* Example: a hover color */
+    color: colors.$blue-hover; /* Example: a hover color */
   }
 }
 
@@ -84,9 +112,7 @@ div.free-text {
 
 .footer {
   text-align: center;
-  background-color: $light-gray;
   font-size: 14px;
-  color: #333;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -103,7 +129,7 @@ div.free-text {
     transition: color 0.3s ease;
   }
   a:hover {
-    color: $linkedin-blue; /* Example: LinkedIn blue */
+    color: colors.$linkedin-blue; /* Example: LinkedIn blue */
   }
 }
 
@@ -120,7 +146,7 @@ div.free-text {
   padding: 15px;
   border: 2px solid #ddd;
   border-radius: 8px;
-  background-color: $almost-white;
+  background-color: colors.$almost-white;
   transition: transform 0.3s, box-shadow 0.3s;
   a {
     text-decoration: none;

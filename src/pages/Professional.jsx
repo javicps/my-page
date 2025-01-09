@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from "react"
 
-const About = () => {
+const Professional = () => {
   useEffect(() => {
-    document.title = "Javier Martínez - Professional";
-  }, []);
+    document.title = "Javier Martínez - Professional"
+  }, [])
 
   return (
     <div className="free-text">
@@ -73,7 +73,7 @@ const About = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default Professional
