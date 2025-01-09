@@ -7,7 +7,7 @@ const Professional = () => {
 
   return (
     <div className="free-text">
-      <h1>About Me</h1>
+      <h1>Professional</h1>
       <p>
         I'm Javier Martinez. I have over fifteen years of experience as an
         engineer, including more than eight years leading IT teams. My expertise
