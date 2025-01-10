@@ -52,7 +52,7 @@ body {
 
 .dark-mode-toggle {
   float: right;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .header {
@@ -130,6 +130,7 @@ div.written-text {
   line-height: 1.6;
   h1 {
     font-family: Garamond;
+    font-size: x-large;
   }
 }
 
@@ -145,7 +146,6 @@ div.free-text {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding-bottom: 10px;
 }
 
 .social-icons {
