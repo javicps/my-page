@@ -1,5 +1,3 @@
-@import "./colors";
-
 @mixin theme($bg-color, $text-color, $icon-color, $link-color) {
   background-color: $bg-color;
   color: $text-color;
