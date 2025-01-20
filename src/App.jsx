@@ -1,18 +1,20 @@
-import React, { useState } from "react"
-import { Routes, Route } from "react-router-dom"
-import Professional from "./pages/Professional"
-import Writing from "./pages/Writing"
-import About from "./pages/About"
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Professional from './pages/Professional'
+import Writing from './pages/Writing'
+import About from './pages/About'
 
-import Story from "./pages/Story"
-import "./App.scss"
+import Story from './pages/Story'
+import './App.scss'
 
-import Footer from "./components/Footer"
-import Menu from "./components/Menu"
-import { PAGE_MODE } from "./constants/PageMode"
+import Footer from './components/Footer'
+import Menu from './components/Menu'
+import { PAGE_MODE } from './constants/PageMode'
 
 const App = () => {
   const [pageMode, setPageMode] = useState(() => {
+    const pageModeFromStorage = window.localStorage.getItem('page_mode')
+    if (pageModeFromStorage) return pageModeFromStorage
     return false
   })
 
@@ -20,12 +22,13 @@ const App = () => {
     const newPageMode =
       pageMode === PAGE_MODE.LIGHT ? PAGE_MODE.DARK : PAGE_MODE.LIGHT
     setPageMode(newPageMode)
+    window.localStorage.setItem('page_mode', newPageMode)
   }
 
-  const dark = pageMode === PAGE_MODE.DARK ? "dark" : ""
+  const dark = pageMode === PAGE_MODE.DARK ? 'dark' : ''
 
   return (
-    <div className={dark ? "main dark-mode" : "main light-mode"}>
+    <div className={dark ? 'main dark-mode' : 'main light-mode'}>
       <Menu pageMode={dark} />
       <div className="content">
         <Routes basename="/my-page">
