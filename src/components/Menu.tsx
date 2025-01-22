@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import { PAGE_MODE } from "../constants/PageMode"
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { PAGE_MODE } from '../constants/PageMode'
 
-export default function Component({ pageMode }) {
-  const dark = pageMode === PAGE_MODE.DARK ? "dark-mode" : "light-mode"
+export default function Component({ currentMode }: { currentMode: string }) {
+  const dark = currentMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
 
   return (
     <header className={`header ${dark}`}>

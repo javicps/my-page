@@ -1,13 +1,14 @@
-import React from "react"
-import { PAGE_MODE } from "../constants/PageMode"
+import React from 'react'
+import { PAGE_MODE } from '../constants/PageMode'
+import { FooterProps } from '../constants/Types'
 
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa"
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 
-export default function Footer({ pageMode, togglePageMode }) {
+export default function Footer({ pageMode, togglePageMode }: FooterProps) {
   const handleClick = () => {
     togglePageMode()
   }
-  const dark = pageMode === PAGE_MODE.DARK ? "dark-mode" : "light-mode"
+  const dark = pageMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
 
   return (
     <footer className={`footer ${dark}`}>
@@ -36,7 +37,7 @@ export default function Footer({ pageMode, togglePageMode }) {
         </a>
       </div>
       <button className={`dark-mode-toggle ${dark}`} onClick={togglePageMode}>
-        Dark Mode: {pageMode === PAGE_MODE.DARK ? "on" : "off"}
+        Dark Mode: {pageMode === PAGE_MODE.DARK ? 'on' : 'off'}
       </button>
     </footer>
   )

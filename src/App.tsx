@@ -25,11 +25,11 @@ const App = () => {
     window.localStorage.setItem('page_mode', newPageMode)
   }
 
-  const dark = pageMode === PAGE_MODE.DARK ? 'dark' : ''
+  const dark: string = pageMode === PAGE_MODE.DARK ? 'dark' : ''
 
   return (
     <div className={dark ? 'main dark-mode' : 'main light-mode'}>
-      <Menu pageMode={dark} />
+      <Menu currentMode={dark} />
       <div className="content">
         <Routes basename="/my-page">
           <Route path="/" element={<About />} />
