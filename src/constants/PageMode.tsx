@@ -1,4 +1,4 @@
-export const PAGE_MODE = {
-  DARK: 'dark',
-  LIGHT: 'light',
-} as const
+export enum PAGE_MODE {
+  DARK = 'dark',
+  LIGHT = 'light',
+}

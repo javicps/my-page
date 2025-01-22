@@ -8,7 +8,7 @@ export default function Footer({ pageMode, togglePageMode }: FooterProps) {
   const handleClick = () => {
     togglePageMode()
   }
-  const dark = pageMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
+  const dark: string = pageMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
 
   return (
     <footer className={`footer ${dark}`}>

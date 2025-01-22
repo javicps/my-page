@@ -1,23 +1,25 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { stories } from "../data/storiesData";
-import WrittenText from "../components/WrittenText";
-import { motion } from "framer-motion";
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { stories } from '../data/storiesData'
+import { motion } from 'framer-motion'
+import WrittenText from '../components/WrittenText'
 
 const getStory = (id) => {
-  return stories.find((story) => story.id === id);
-};
+  return stories.find((story) => story.id === id)
+}
 
-const StoryPage = () => {
-  const { id } = useParams(); // Get 'id' from the route
-  const story = getStory(id);
+const StoryPage: React.FC = () => {
+  const { id } = useParams<{ id: string }>() // Get 'id' from the route
+  const story = getStory(id)
 
   useEffect(() => {
-    document.title = `Javier Martínez - ${story.title}`;
-  }, []);
+    if (story) {
+      document.title = `Javier Martínez - ${story.title}`
+    }
+  }, [story])
 
   if (!story) {
-    return <h1>Story not found</h1>;
+    return <h1>Story not found</h1>
   }
 
   return (
@@ -29,7 +31,7 @@ const StoryPage = () => {
     >
       <WrittenText {...story} />
     </motion.div>
-  );
-};
+  )
+}
 
-export default StoryPage;
+export default StoryPage

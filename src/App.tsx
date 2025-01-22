@@ -12,33 +12,34 @@ import Menu from './components/Menu'
 import { PAGE_MODE } from './constants/PageMode'
 
 const App = () => {
-  const [pageMode, setPageMode] = useState(() => {
-    const pageModeFromStorage = window.localStorage.getItem('page_mode')
-    if (pageModeFromStorage) return pageModeFromStorage
-    return false
+  const [pageMode, setPageMode] = useState<PAGE_MODE>(() => {
+    const pageModeFromStorage: string | null =
+      window.localStorage.getItem('page_mode')
+    if (pageModeFromStorage && pageModeFromStorage === PAGE_MODE.DARK)
+      return PAGE_MODE.DARK
+    return PAGE_MODE.LIGHT
   })
 
   const togglePageMode = () => {
-    const newPageMode =
+    const newPageMode: PAGE_MODE =
       pageMode === PAGE_MODE.LIGHT ? PAGE_MODE.DARK : PAGE_MODE.LIGHT
     setPageMode(newPageMode)
     window.localStorage.setItem('page_mode', newPageMode)
   }
-
-  const dark: string = pageMode === PAGE_MODE.DARK ? 'dark' : ''
-
+  const pageModeString: string =
+    pageMode === PAGE_MODE.DARK ? 'main dark-mode' : 'main light-mode'
   return (
-    <div className={dark ? 'main dark-mode' : 'main light-mode'}>
-      <Menu currentMode={dark} />
+    <div className={pageModeString}>
+      <Menu currentMode={pageMode} />
       <div className="content">
-        <Routes basename="/my-page">
+        <Routes>
           <Route path="/" element={<About />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/writing" element={<Writing />} />
           <Route path="/writing/:id" element={<Story />} />
         </Routes>
       </div>
-      <Footer pageMode={dark} togglePageMode={togglePageMode} />
+      <Footer pageMode={pageMode} togglePageMode={togglePageMode} />
     </div>
   )
 }

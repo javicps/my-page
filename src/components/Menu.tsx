@@ -2,7 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { PAGE_MODE } from '../constants/PageMode'
 
-export default function Component({ currentMode }: { currentMode: string }) {
+export default function Component({
+  currentMode,
+}: {
+  currentMode: PAGE_MODE.DARK | PAGE_MODE.LIGHT
+}) {
   const dark = currentMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
 
   return (
