@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { PAGE_MODE } from '../constants/PageMode'
+import { MenuProps, PageMode } from '../constants/Types'
 
-export default function Component({
-  currentMode,
-}: {
-  currentMode: PAGE_MODE.DARK | PAGE_MODE.LIGHT
-}) {
+const Menu: React.FC<MenuProps> = ({ currentMode }: MenuProps) => {
   const dark = currentMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
 
   return (
@@ -27,3 +24,5 @@ export default function Component({
     </header>
   )
 }
+
+export default Menu

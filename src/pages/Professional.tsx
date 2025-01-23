@@ -1,8 +1,8 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react'
 
-const Professional = () => {
+const Professional: React.FC = () => {
   useEffect(() => {
-    document.title = "Javier Martínez - Professional"
+    document.title = 'Javier Martínez - Professional'
   }, [])
 
   return (
@@ -21,7 +21,7 @@ const Professional = () => {
       <p>Accolades:</p>
       <ul>
         <li>
-          Check the{" "}
+          Check the{' '}
           <a
             href="https://sysdig.com/blog/author/javier-martinez/"
             target="_blank"
@@ -31,19 +31,18 @@ const Professional = () => {
         </li>
 
         <li>
-          The piece about{" "}
+          The piece about{' '}
           <a
             href="https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/"
             target="_blank"
           >
             Crashloopbackoff
-          </a>{" "}
-          reached #1 rank in Google and was featured in several professional
-          channels
+          </a>{' '}
+          reached #1 rank in Google and was featured in several expert channels
         </li>
 
         <li>
-          I wrote the script for{" "}
+          I wrote the script for{' '}
           <a
             href="https://sysdig.com/blog/tales-from-the-kube/"
             target="_blank"
@@ -54,15 +53,15 @@ const Professional = () => {
         </li>
 
         <li>
-          Watch my{" "}
+          Watch my{' '}
           <a href="https://www.youtube.com/watch?v=cQkCOZWjXNs" target="_blank">
             talk about Container Checkpointing
-          </a>{" "}
+          </a>{' '}
           in Open Source Summit Europe (with Daniel Simionato)
         </li>
 
         <li>
-          Developed the{" "}
+          Developed the{' '}
           <a
             href="https://apkcombo.com/es/jpod-15-zgz/com.lolquizz.jpod15zgz/"
             target="_blank"

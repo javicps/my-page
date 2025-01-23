@@ -4,7 +4,7 @@ import Professional from './pages/Professional'
 import Writing from './pages/Writing'
 import About from './pages/About'
 
-import Story from './pages/Story'
+import StoryPage from './pages/StoryPage'
 import './App.scss'
 
 import Footer from './components/Footer'
@@ -26,6 +26,7 @@ const App = () => {
     setPageMode(newPageMode)
     window.localStorage.setItem('page_mode', newPageMode)
   }
+
   const pageModeString: string =
     pageMode === PAGE_MODE.DARK ? 'main dark-mode' : 'main light-mode'
   return (
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/" element={<About />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/writing" element={<Writing />} />
-          <Route path="/writing/:id" element={<Story />} />
+          <Route path="/writing/:id" element={<StoryPage />} />
         </Routes>
       </div>
       <Footer pageMode={pageMode} togglePageMode={togglePageMode} />

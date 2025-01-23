@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
-const Writing = () => {
+const Writing: React.FC = () => {
   useEffect(() => {
-    document.title = "Javier Martínez - Writing";
-  }, []);
+    document.title = 'Javier Martínez - Writing'
+  }, [])
 
   const stories = [
-    { title: "La ley del desierto", slug: "laleydeldesierto" },
+    { title: 'La ley del desierto', slug: 'laleydeldesierto' },
     {
-      title: "La inevitable soledad de Henrietta Penbroke",
-      slug: "inevitablesoledad",
+      title: 'La inevitable soledad de Henrietta Penbroke',
+      slug: 'inevitablesoledad',
     },
     {
-      title: "Entre los muertos habrá siempre una lengua viva",
-      slug: "entrelosmuertos",
+      title: 'Entre los muertos habrá siempre una lengua viva',
+      slug: 'entrelosmuertos',
     },
-    { title: "Desyat", slug: "desyat" },
-    { title: "Seguir las luces", slug: "seguirlasluces" },
-  ];
+    { title: 'Desyat', slug: 'desyat' },
+    { title: 'Seguir las luces', slug: 'seguirlasluces' },
+  ]
 
   return (
     <div className="free-text">
@@ -33,7 +33,7 @@ const Writing = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Writing;
+export default Writing

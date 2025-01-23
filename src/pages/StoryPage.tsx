@@ -19,7 +19,11 @@ const StoryPage: React.FC = () => {
   }, [story])
 
   if (!story) {
-    return <h1>Story not found</h1>
+    return (
+      <div className="free-text">
+        <h1>Story not found</h1>
+      </div>
+    )
   }
 
   return (

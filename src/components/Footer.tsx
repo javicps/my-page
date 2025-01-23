@@ -4,7 +4,10 @@ import { FooterProps } from '../constants/Types'
 
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 
-export default function Footer({ pageMode, togglePageMode }: FooterProps) {
+const Footer: React.FC<FooterProps> = ({
+  pageMode,
+  togglePageMode,
+}: FooterProps) => {
   const handleClick = () => {
     togglePageMode()
   }
@@ -42,3 +45,4 @@ export default function Footer({ pageMode, togglePageMode }: FooterProps) {
     </footer>
   )
 }
+export default Footer

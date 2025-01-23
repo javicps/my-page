@@ -1,11 +1,10 @@
 import React from 'react'
+import { WrittenTextProps } from '../constants/Types'
 
-type WrittenTextProps = {
-  title: string
-  content: string
-}
-
-export default function WrittenText({ title, content }: WrittenTextProps) {
+const WrittenText: React.FC<WrittenTextProps> = ({
+  title,
+  content,
+}: WrittenTextProps) => {
   return (
     <div className="written-text">
       <h1>{title}</h1>
@@ -13,3 +12,5 @@ export default function WrittenText({ title, content }: WrittenTextProps) {
     </div>
   )
 }
+
+export default WrittenText

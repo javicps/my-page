@@ -1,7 +1,7 @@
 export const stories = [
   {
-    id: "entrelosmuertos",
-    title: "Entre los muertos habrá siempre una lengua viva",
+    id: 'entrelosmuertos',
+    title: 'Entre los muertos habrá siempre una lengua viva',
     content: (
       <>
         <p>
@@ -252,8 +252,8 @@ export const stories = [
     ),
   },
   {
-    id: "inevitablesoledad",
-    title: "La inevitable soledad de Henrietta Penbroke",
+    id: 'inevitablesoledad',
+    title: 'La inevitable soledad de Henrietta Penbroke',
     content: (
       <>
         <p>
@@ -538,8 +538,8 @@ export const stories = [
     ),
   },
   {
-    id: "laleydeldesierto",
-    title: "La ley del desierto",
+    id: 'laleydeldesierto',
+    title: 'La ley del desierto',
     content: (
       <>
         <p>
@@ -547,7 +547,7 @@ export const stories = [
             Esta historia sucedió hace mucho tiempo, durante un día de mercado
             en la ciudad de Bagdad. Era una mañana de primavera con una
             temperatura bastante suave. Los clientes se agolpaban alrededor de
-            los puestos de sándalo, pimienta, cuero y seda.{" "}
+            los puestos de sándalo, pimienta, cuero y seda.{' '}
           </span>
         </p>
         <p>
@@ -555,50 +555,50 @@ export const stories = [
             En un callejón aledaño, Kassim el ratero observaba a los viandantes.
             Farah, una mujer de pelo canoso y piel oscura caminaba
             despreocupada. El hombre vio su oportunidad. Con su cimitarra,
-            amenazó a la mujer para que le entregara todo lo que llevaba.{" "}
+            amenazó a la mujer para que le entregara todo lo que llevaba.{' '}
           </span>
         </p>
         <p>
           <span>
             —No me suena tu cara, pero debes saber que hay que pagar un precio
-            por deambular por aquí.{" "}
+            por deambular por aquí.{' '}
           </span>
         </p>
         <p>
           <span>
             —Soy de fuera. —dijo la mujer sin una pizca de miedo —Vengo a
-            visitar a alguien.{" "}
+            visitar a alguien.{' '}
           </span>
         </p>
         <p>
           <span>
             Lo único que pudo encontrar Kassim tras cachearla era una daga
-            ornamentada de valor incalculable.{" "}
+            ornamentada de valor incalculable.{' '}
           </span>
         </p>
         <p>
           <span>
-            —Preferiría que no me quitaras esto. Esta es la daga de Al-Rassam…{" "}
+            —Preferiría que no me quitaras esto. Esta es la daga de Al-Rassam…{' '}
           </span>
         </p>
         <p>
           <span>
             —¿Debería conocerla? —Kassim no podía dejar de mirar sus rubíes
             engarzados y su empuñadura de oro. —No la necesito para nada,
-            simplemente la venderé al mejor postor.{" "}
+            simplemente la venderé al mejor postor.{' '}
           </span>
         </p>
         <p>
           <span>
             —Como quieras. Pero has de saber que a quien entregues esta arma,
-            acabará asesinándote.{" "}
+            acabará asesinándote.{' '}
           </span>
         </p>
         <p>
           <span>
             —¡Ja! —rio Kassim —Sé perfectamente lo que estás haciendo. Intentas
             asustarme con trucos baratos. Pero has de saber que a Kassim no le
-            asusta ninguna superstición. No creo en dagas mágicas,{" "}
+            asusta ninguna superstición. No creo en dagas mágicas,{' '}
           </span>
           <i>
             <span>djinns </span>
@@ -609,7 +609,7 @@ export const stories = [
           </i>
           <span>
             de la arena. No has hecho más que confirmarme lo valiosa que debe
-            ser para tener que recurrir a esta artimaña.{" "}
+            ser para tener que recurrir a esta artimaña.{' '}
           </span>
         </p>
         <p>
@@ -625,7 +625,7 @@ export const stories = [
             en el pasado Kassim u otros ladrones habían sisado alguna especia de
             sus alforjas. Sería la persona perfecta. Incluso si el anciano
             decidiera atacarle, no sería un rival difícil, dado que su
-            constitución era bastante débil, y su pulso, endeble.{" "}
+            constitución era bastante débil, y su pulso, endeble.{' '}
           </span>
         </p>
         <p>
@@ -637,7 +637,7 @@ export const stories = [
             hampones a sueldo para conseguir sus oscuros fines. Ya no era
             Kassim, el ratero de barrio, sino Kassim el poderoso señor criminal.
             Por ello, empezó a atraer las miradas de muchas personas influyentes
-            de Bagdad.{" "}
+            de Bagdad.{' '}
           </span>
         </p>
         <p>
@@ -648,20 +648,20 @@ export const stories = [
             de comer por miedo a ser envenenado. No yacía con mujeres ni paseaba
             por las calles por temor a ser atacado. Harto de vivir en una
             duermevela, buscó por todas las calles a Farah, la mujer que
-            desencadenó todo.{" "}
+            desencadenó todo.{' '}
           </span>
         </p>
         <p>
           <span>
             La encontró en un callejón similar al de la primera vez, y allí la
-            encaró.{" "}
+            encaró.{' '}
           </span>
         </p>
         <p>
           <span>
             —Vender aquella daga no me ha traído más que desgracias. —dijo
             Kassim desafiante. Estaba visiblemente nervioso. —¡Vas a pagar por
-            ello!{" "}
+            ello!{' '}
           </span>
         </p>
         <p>
@@ -669,12 +669,12 @@ export const stories = [
             —La daga no ha sido la causante de eso. Ya eras mezquino antes:
             robabas y tomabas a tu antojo. Lo único que ha cambiado es que tu
             riqueza ha alimentado la ambición de otros. —dijo Farah mirándole
-            fijamente a los ojos.{" "}
+            fijamente a los ojos.{' '}
           </span>
         </p>
         <p>
           <span>
-            —¿Cómo puedes estar tan tranquila sabiendo que vas a morir?{" "}
+            —¿Cómo puedes estar tan tranquila sabiendo que vas a morir?{' '}
           </span>
         </p>
         <p>
@@ -692,7 +692,7 @@ export const stories = [
             pecho de Farah, quien se echó al suelo con una expresión apacible.
             El hombre abandonó el callejón huyendo sin rumbo. Y así fue durante
             muchas semanas, pues Kassim vagó por muchos arrabales, utilizando
-            falsos nombres y artimañas para pasar desapercibido.{" "}
+            falsos nombres y artimañas para pasar desapercibido.{' '}
           </span>
         </p>
         <p>
@@ -704,7 +704,7 @@ export const stories = [
             degollado. Cuál fue su sorpresa cuando vio entrar a Halîm, el
             pacífico mercader, en el improvisado patíbulo para cumplir la ley
             del talión. Su única hija, Farah, había sido asesinada y, como dicta
-            la norma, él sería quien llevara a cabo la ejecución del criminal.{" "}
+            la norma, él sería quien llevara a cabo la ejecución del criminal.{' '}
           </span>
         </p>
         <p>
@@ -718,8 +718,8 @@ export const stories = [
     ),
   },
   {
-    id: "desyat",
-    title: "Desyat",
+    id: 'desyat',
+    title: 'Desyat',
     content: (
       <>
         <p>
@@ -868,8 +868,8 @@ export const stories = [
     ),
   },
   {
-    id: "seguirlasluces",
-    title: "Seguir las luces",
+    id: 'seguirlasluces',
+    title: 'Seguir las luces',
     content: (
       <>
         <p>
@@ -899,7 +899,7 @@ export const stories = [
         </p>
         <p></p>
         <p>
-          Como siempre, ella les tuteaba y, como siempre, ellos la trataban{" "}
+          Como siempre, ella les tuteaba y, como siempre, ellos la trataban{' '}
           <em>de usted</em>.
         </p>
         <p></p>
@@ -1004,4 +1004,4 @@ export const stories = [
       </>
     ),
   },
-];
+]
