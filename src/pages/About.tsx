@@ -31,7 +31,7 @@ const About: React.FC = () => {
           View my work
         </Link>
         <a
-          href="https://www.linkedin.com/in/javier-martinez-2b2a955/"
+          href="https://www.linkedin.com/in/javi-mart%C3%ADnez-2b2a955/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline"
@@ -42,7 +42,7 @@ const About: React.FC = () => {
 
       <div className="hero-socials">
         <a
-          href="https://www.linkedin.com/in/javier-martinez-2b2a955/"
+          href="https://www.linkedin.com/in/javi-mart%C3%ADnez-2b2a955/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({
     <footer className="footer">
       <div className="social-icons">
         <a
-          href="https://www.linkedin.com/in/javier-martinez-2b2a955/"
+          href="https://www.linkedin.com/in/javi-mart%C3%ADnez-2b2a955/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
