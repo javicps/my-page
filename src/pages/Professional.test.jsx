@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
+import { MemoryRouter } from 'react-router-dom'
 
 import { describe, it } from 'vitest'
 import Professional from './Professional'
@@ -15,8 +16,12 @@ describe('Professional page', () => {
 
 describe('About page', () => {
   it('should render About title', () => {
-    render(<About />)
-    const titleElement = screen.getByText(/About Me/i)
+    render(
+      <MemoryRouter>
+        <About />
+      </MemoryRouter>
+    )
+    const titleElement = screen.getByText(/Javier Martínez/i)
     expect(titleElement).toBeInTheDocument()
   })
 })

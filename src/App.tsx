@@ -31,7 +31,7 @@ const App = () => {
     pageMode === PAGE_MODE.DARK ? 'main dark-mode' : 'main light-mode'
   return (
     <div className={pageModeString}>
-      <Menu currentMode={pageMode} />
+      <Menu />
       <div className="content">
         <Routes>
           <Route path="/" element={<About />} />

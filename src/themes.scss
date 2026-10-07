@@ -1,17 +1,22 @@
-@mixin theme($bg-color, $text-color, $icon-color, $link-color) {
-  background-color: $bg-color;
-  color: $text-color;
+@mixin theme(
+  $bg-color,
+  $surface-color,
+  $text-color,
+  $muted-color,
+  $border-color,
+  $accent-soft
+) {
+  --bg-color: #{$bg-color};
+  --surface-color: #{$surface-color};
+  --text-color: #{$text-color};
+  --muted-color: #{$muted-color};
+  --border-color: #{$border-color};
+  --accent-soft: #{$accent-soft};
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
   a {
-    color: $link-color;
-  }
-
-  .navbar a {
-    color: $link-color;
-  }
-
-  .social-icons .icon {
-    color: $icon-color;
-    transition: color 0.3s ease;
+    color: var(--text-color);
   }
 }

@@ -1,23 +1,38 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { PAGE_MODE } from '../constants/PageMode'
-import { MenuProps, PageMode } from '../constants/Types'
+import { NavLink } from 'react-router-dom'
 
-const Menu: React.FC<MenuProps> = ({ currentMode }: MenuProps) => {
-  const dark = currentMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
-
+const Menu: React.FC = () => {
   return (
-    <header className={`header ${dark}`}>
+    <header className="header">
       <nav className="navbar">
+        <NavLink to="/" className="brand" end>
+          Javier Martínez
+        </NavLink>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) => (isActive ? 'active' : undefined)}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/professional">Professional</Link>
+            <NavLink
+              to="/professional"
+              className={({ isActive }) => (isActive ? 'active' : undefined)}
+            >
+              Professional
+            </NavLink>
           </li>
           <li>
-            <Link to="/writing">Writing (ES)</Link>
+            <NavLink
+              to="/writing"
+              className={({ isActive }) => (isActive ? 'active' : undefined)}
+            >
+              Writing (ES)
+            </NavLink>
           </li>
         </ul>
       </nav>

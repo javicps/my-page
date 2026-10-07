@@ -8,40 +8,44 @@ const Footer: React.FC<FooterProps> = ({
   pageMode,
   togglePageMode,
 }: FooterProps) => {
-  const handleClick = () => {
-    togglePageMode()
-  }
-  const dark: string = pageMode === PAGE_MODE.DARK ? 'dark-mode' : 'light-mode'
+  const isDark = pageMode === PAGE_MODE.DARK
 
   return (
-    <footer className={`footer ${dark}`}>
-      <p>© {new Date().getFullYear()} Javier Martínez. All rights reserved.</p>
+    <footer className="footer">
       <div className="social-icons">
         <a
           href="https://www.linkedin.com/in/javier-martinez-2b2a955/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          <FaLinkedin size={24} />
+          <FaLinkedin size={18} />
         </a>
         <a
           href="https://twitter.com/javiermartp"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Twitter"
         >
-          <FaTwitter size={24} />
+          <FaTwitter size={18} />
         </a>
         <a
           href="https://github.com/javicps"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
-          <FaGithub size={24} />
+          <FaGithub size={18} />
         </a>
       </div>
-      <button className={`dark-mode-toggle ${dark}`} onClick={togglePageMode}>
-        Dark Mode: {pageMode === PAGE_MODE.DARK ? 'on' : 'off'}
+      <button
+        className="theme-toggle"
+        onClick={togglePageMode}
+        aria-pressed={isDark}
+      >
+        {isDark ? '🌙 Dark' : '☀️ Light'}
       </button>
+      <p>© {new Date().getFullYear()} Javier Martínez. All rights reserved.</p>
     </footer>
   )
 }

@@ -1,17 +1,20 @@
-$almost-white: #f9f9f9;
-$light-gray: #bbb;
-$dark-gray: #333;
-$linkedin-blue: #0077b5;
-$blue-hover: #0077b5;
+// Brand accent
+$accent: #4f46e5; // indigo-600
+$accent-hover: #4338ca; // indigo-700
+$accent-soft: #eef2ff; // indigo-50
+$accent-soft-dark: #1e1b4b; // indigo-950
+$linkedin-blue: #0a66c2;
 
-// Light mode colors
+// Light mode
 $bg-color-light: #ffffff;
-$text-color-light: #000000;
-$icon-color-light: #1da1f2;
-$link-color-light: #555;
+$surface-color-light: #f6f7fb;
+$text-color-light: #14151a;
+$muted-color-light: #5b5f6b;
+$border-color-light: #e4e6ee;
 
-// Dark mode colors
-$bg-color-dark: #121212;
-$text-color-dark: #ffffff;
-$icon-color-dark: #4fc3f7;
-$link-color-dark: #555;
+// Dark mode
+$bg-color-dark: #0d0e12;
+$surface-color-dark: #16171d;
+$text-color-dark: #f3f4f7;
+$muted-color-dark: #9ca0ad;
+$border-color-dark: #2a2c35;

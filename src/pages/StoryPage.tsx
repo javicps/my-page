@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { stories } from '../data/storiesData'
 import { motion } from 'framer-motion'
 import WrittenText from '../components/WrittenText'
@@ -33,6 +33,11 @@ const StoryPage: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
+      <div className="story-page">
+        <Link to="/writing" className="back-link">
+          ← Back to writing
+        </Link>
+      </div>
       <WrittenText {...story} />
     </motion.div>
   )

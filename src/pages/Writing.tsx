@@ -21,10 +21,16 @@ const Writing: React.FC = () => {
   ]
 
   return (
-    <div className="free-text">
-      <h1>My Writing</h1>
-      <p>This is a collection of short fiction stories I wrote (in Spanish)</p>
-      <p>Esta es una selección de relatos cortos que he escrito (en Español)</p>
+    <div className="page">
+      <div className="page-header">
+        <p className="page-eyebrow">Writing</p>
+        <h1>My Writing</h1>
+        <p className="page-lead">
+          This is a collection of short fiction stories I wrote (in Spanish).
+          <br />
+          Esta es una selección de relatos cortos que he escrito (en Español).
+        </p>
+      </div>
       <div className="story-list">
         {stories.map((story, index) => (
           <div className="story-card" key={index}>
